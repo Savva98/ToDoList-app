@@ -1,0 +1,15 @@
+{
+  "name": "todolistapp",
+  "version": "1.0.0",
+  "description": "make your own schedual",
+  "default": "src/js/controller.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Savva",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="src/style/style.css">
+    <script defer type="module" src="src/js/controller.js"></script>
+    <title>To do</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="head">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <button class="nav_btn nav_btn--done-tasks">
+                <span>It is done</span>
+              </button>
+              <div class="done">
+                <div class="message">
+                  <p>You haven't done any tasks yet.</p>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section-1">Features</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section-2">How to</a>
+            </li>
+            <li class="nav__item">
+              <button class="nav_btn nav__btn-list" >
+                <span>List</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__title">
+          <h1>
+            <span class="highlight"> Stay with me, </span>if
+            you need to get things
+            <span class="highlight">done.</span>
+          </h1>
+          <h3>Every task will be done.</h3>
+          <button class="btn--text btn--scroll-to" id="section-" >Check it!</button>
+          <img class="preview__App" src="src/img/Portrait-vs-Landscape-Featured-Image-3.jpg" alt="" />
+        </div>
+      </header>
+
+      <section class="section section1" id="section-1">
+        <div class="section__title">
+          <h2 class="section__description">Features</h2>
+          <h3 class="section__header">
+            Everything is simple. Just go ahead and make
+            your own list.
+          </h3>
+        </div>
+        <div class="operations">
+          <div class="operations__tab-container">
+            <button
+              class="btn operations__tab operations__tab--1 operations__tab--active"
+              data-tab="1"
+            >
+              <span>Add to List</span>
+            </button>
+            <button
+              class="btn operations__tab operations__tab--2"
+              data-tab="2"
+            >
+             <span>Mark as done</span> 
+            </button>
+            <button
+              class="btn operations__tab operations__tab--3"
+              data-tab="3"
+            >
+             <span>Delete task</span> 
+            </button>
+          </div>
+          <div class="operations__content operations__content--1 operations__content--active">
+            <div class="operations__icon operations__icon--1"
+            >
+                <img src="src/img/icons8-add-gradients-96.png">
+            </div>
+            <h5 class="operations__header">
+              Add the task to your list
+            </h5>
+            <p>When you fill up form and press 'Upload' button, all the tasks you have wrote, will be moved to the task list.</p>
+          </div>
+
+          <div class="operations__content operations__content--2">
+            <div class="operations__icon operations__icon--2">
+              <img src="src/img/icons8-todo-list-ios-16-96.png" alt="">
+            </div>
+            <h5 class="operations__header">
+              Mark the task as a done
+            </h5>
+            <p>When you press the complete button the task will be removed from the list, but you can still see how much task you have already completed, if you hover the mouse on the "It is done button".
+            </p>
+          </div>
+
+          <div class="operations__content operations__content--3">
+            <div class="operations__icon operations__icon--3">
+              <img src="src/img/icons8-delete-cute-clipart-96.png" alt="">
+            </div>
+            <h5 class="operations__header">
+              Delete the task, whenever you like
+            </h5>
+            <p>When you click delete button, task will be removed from the task list. You can also remove tasks when you filling the form if you misspell something.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="section-2">
+        <div class="section__title section__title-how-to">
+          <h2 class="section__description">This is how to start</h2>
+          <h3 class="section__header">
+            Watch the slides, and start to organize your day today.
+          </h3>
+        </div>
+        <div class="slider">
+          <div class="slide slide--1">
+            <div class="slide-descript">
+              <h5 class="slide_header">Thanks for choosing this app.</h5>
+              <p class="slider-text">
+                Hope you'll find this app useful for your needs. And it will help make your life easier.
+                Follow the instractions to get started.
+              </p>
+              <img src="src/img/swiss-mountains.jpg" alt="" class="slide_img">
+            </div>
+          </div>
+
+          <div class="slide slide--2">
+            <div class="slide-descript">
+              <h5 class="slide_header">
+                To get started click the button.
+              </h5>
+              <img src="src/img/Button.png" alt="" class="slide_img">
+            </div>
+          </div>
+
+          <div class="slide slide--3">
+            <div class="slide-descript">
+              <h5 class="slide_header">
+                Fill the form and you're good to go.
+              </h5>
+              <img src="src/img/Form.png" alt="" class="slide_img">
+            </div>
+          </div>
+          
+          <div class="slide slide--3">
+            <div class="slide-descript">
+              <h5 class="slide_header">
+                Mark the task as done.
+              </h5>
+              <img src="src/img/Done.png" alt="" class="slide_img">
+            </div>
+          </div>
+          <div class="slide slide--3">
+            <div class="slide-descript">
+              <h5 class="slide_header">
+                Delete the task if you wish to.
+              </h5>
+              <img src="src/img/Done.png" alt="" class="slide_img">
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+      <button class="slider__btn slider__btn--right">&rarr;</button>
+      <div class="dots"></div>
+        </div>
+      </section>
+      <section class="section section--start-up">
+        <div class="section__title">
+          <h3 class="section__header">
+            What are you waiting for, jump straight into it. With every done task you will feel better about yourself.
+          </h3>
+        </div>
+        <button class="btn btn--show-modal">Let's make it!</button>
+      </section>
+      <footer class="footer">
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a class="footer__link" href="#">About</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Pricing</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Terms of Use</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Careers</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div class="overlay hidden1"></div>
+    <div class = 'add-task-window hidden1'>
+      <button class="btn--close-window">&times;</button>
+      <h3 class="upload__heading">Write a task</h3>
+      <form class="upload">
+        <div class="upload_column">
+          <div class="input_filed">
+          <label for="desc">Description:</label>
+          <input name="description" type="text" id="desc"/>
+          <label for="date1">Date:</label>
+          <input type="date" name="date" id="date1">
+          <label for = 'timeStemp'>Time:</label>
+          <input type="time" name="time" id="timeStemp">
+        </div>
+          <button class="btn add_task"><span>Add task!</span></button>
+        </div>
+        <button class="btn upload__btn">
+          <span>
+            Upload
+          </span>
+        </button>
+      </form>
+    </div>
+    <div class="added_task hidden">
+      <!-- <p class="about">Lorem ipsum dolor sit amet.</p> -->
+    </div>
+    <div class="overlay1 hidden"></div>
+    <div class="task_list hidden">
+      <button class="btn--close-window--task">&times;</button>
+      <button class="btn--add--task"><img src="src/img/icons8-add-office-m-32.png" alt=""></button>
+      <div class="task_header">
+        <h2 class="task_heading">Your current task list</h2>
+      </div>
+      <div class="task_container">
+      </div>
+      <div class="pagination">
+        <div class="paginationArrows">
+        </div>
+        <!-- <button class="btn--inline paggination__btn--prev">
+          <svg class="search__icon">
+            <use href = 'src/img/icons.svg#blue_copy'></use>
+          </svg>
+        </button>
+        <button class=" btn--inline paggination__btn--next">
+          <svg class="search__icon">
+            <use href = 'src/img/icons.svg#blue_copy'></use>
+          </svg>
+        </button>  -->
+        <div class="pag_numBtn">
+          <ul class="btn_num_container">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
